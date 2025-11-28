@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf1fc5-3a3b-471c-89fe-302853a79b7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Rostelecom_proj.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/events_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/lk_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/registration_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_rostelecom.py" afterDir="false" />
+    <list default="true" id="19cf1fc5-3a3b-471c-89fe-302853a79b7d" name="Changes" comment="Final version">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/lk_page.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "oneDarkDev1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/oneDarkDev1/Rostelecom_proj.git",
+    "accountId": "859af3ab-b331-4015-8dbf-e944278b5b4a"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -42,23 +45,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for tests.test_rostelecom.test_auth.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests.test_rostelecom.test_filters_in_feed.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests.test_rostelecom.test_inexistent_date.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests.test_rostelecom.test_registration_alarm.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_rostelecom.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for tests.test_rostelecom.test_auth.executor": "Run",
+    "Python tests.Python tests for tests.test_rostelecom.test_filters_in_feed.executor": "Run",
+    "Python tests.Python tests for tests.test_rostelecom.test_inexistent_date.executor": "Run",
+    "Python tests.Python tests for tests.test_rostelecom.test_registration_alarm.executor": "Run",
+    "Python tests.Python tests in test_rostelecom.py.executor": "Run",
+    "Python.login_page.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/pinea/PycharmProjects/Rostelecom_proj",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pinea\PycharmProjects\Rostelecom_proj" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pinea\PycharmProjects\Rostelecom_proj\pages" />
     </key>
@@ -140,10 +147,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_auth" />
-      <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_filters_in_feed" />
       <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_inexistent_date" />
+      <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_filters_in_feed" />
       <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_registration_alarm" />
+      <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_auth" />
       <item itemvalue="Python tests.Python tests in test_rostelecom.py" />
     </list>
     <recent_temporary>
@@ -171,6 +178,19 @@
       <option name="presentableId" value="Default" />
       <updated>1763290688120</updated>
     </task>
+    <task id="LOCAL-00001" summary="Final version">
+      <option name="closed" value="true" />
+      <created>1764341320042</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764341320042</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version" />
   </component>
 </project>
