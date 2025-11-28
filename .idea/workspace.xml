@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="19cf1fc5-3a3b-471c-89fe-302853a79b7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Rostelecom_proj.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/events_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/lk_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/registration_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_rostelecom.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="35Ycwz49RaVOwM66SyH7sXcNtD6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for tests.test_rostelecom.test_auth.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_rostelecom.test_filters_in_feed.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_rostelecom.test_inexistent_date.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_rostelecom.test_registration_alarm.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_rostelecom.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pinea\PycharmProjects\Rostelecom_proj\pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_rostelecom.test_inexistent_date">
+    <configuration name="Python tests for tests.test_rostelecom.test_auth" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Rostelecom_proj" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;--driver Chrome --driver-path C:\\Users\\pinea\\Downloads\\chromedriver.exe&quot;" />
+      <option name="_new_target" value="&quot;tests.test_rostelecom.test_auth&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_rostelecom.test_filters_in_feed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Rostelecom_proj" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;--driver Chrome --driver-path C:\\Users\\pinea\\Downloads\\chromedriver.exe&quot;" />
+      <option name="_new_target" value="&quot;tests.test_rostelecom.test_filters_in_feed&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_rostelecom.test_inexistent_date" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Rostelecom_proj" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;--driver Chrome --driver-path C:\\Users\\pinea\\Downloads\\chromedriver.exe&quot;" />
+      <option name="_new_target" value="&quot;tests.test_rostelecom.test_inexistent_date&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_rostelecom.test_registration_alarm" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Rostelecom_proj" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;--driver Chrome --driver-path C:\\Users\\pinea\\Downloads\\chromedriver.exe&quot;" />
+      <option name="_new_target" value="&quot;tests.test_rostelecom.test_registration_alarm&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_rostelecom.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Rostelecom_proj" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;--driver Chrome --driver-path C:\\Users\\pinea\\Downloads\\chromedriver.exe&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_rostelecom.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_auth" />
+      <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_filters_in_feed" />
+      <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_inexistent_date" />
+      <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_registration_alarm" />
+      <item itemvalue="Python tests.Python tests in test_rostelecom.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_inexistent_date" />
+        <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_filters_in_feed" />
+        <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_registration_alarm" />
+        <item itemvalue="Python tests.Python tests for tests.test_rostelecom.test_auth" />
+        <item itemvalue="Python tests.Python tests in test_rostelecom.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d9fa9deec7cb-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.515" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19cf1fc5-3a3b-471c-89fe-302853a79b7d" name="Changes" comment="" />
+      <created>1763290688120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763290688120</updated>
+    </task>
+    <servers />
+  </component>
+</project>
