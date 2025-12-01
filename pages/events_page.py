@@ -120,16 +120,30 @@ class EventsPage(BasePage):
                 checkbox.click()
 
             i += 1
+    def click_filters(self, section_num):
+        i = 1
+
+        while True:
+            checkbox_xpath = (
+                f"//*[@id='fade-screen']/div/div[2]/div/div[{section_num}]/div[{i}]"
+                f"/div/input[@type='checkbox']"
+            )
+
+            try:
+                checkbox = self.driver.find_element(By.XPATH, checkbox_xpath)
+            except NoSuchElementException:
+                break
+
+            if not checkbox.is_selected():
+                checkbox.click()
+
+            i += 1
 
     @property
     def count_filter_sections(self):
         return len(
             self.driver.find_elements(*EventsLocators.filter_sections)
         )
-
-    @property
-    def close_filter_settings_button(self):
-        return self.driver.find_element(*EventsLocators.close_settings_locator)
 
     @property
     def no_events_message(self):
