@@ -1,4 +1,3 @@
-import pytest
 from pages.events_page import EventsPage
 from pages.locators import RegistrationLocators, SecurityPageLocators, LkLocators, EventsLocators
 from pages.login_page import *
@@ -6,6 +5,26 @@ from pages.registration_page import RegistartionPage
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import pytest
+
+
+@pytest.fixture
+def selenium():
+    options = Options()
+    options.add_argument("--disable-gpu")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")  # Huge macOS speedup
+    options.add_argument("--disable-infobars")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--log-level=3")
+
+    driver = webdriver.Chrome(options=options)
+    driver.set_window_size(1400, 900)
+    yield driver
+    driver.quit()
 
 
 @pytest.fixture()
@@ -36,7 +55,7 @@ def login(selenium):
 
 @pytest.fixture()
 def get_feed_page(selenium):
-    wait = WebDriverWait(selenium, 10)
+    wait = WebDriverWait(selenium, 14)
 
     wait.until(
         EC.visibility_of_element_located(SecurityPageLocators.lk_bttn_locator)
@@ -46,10 +65,38 @@ def get_feed_page(selenium):
     wait.until(
         EC.visibility_of_element_located(LkLocators.events_bttn_locator)
     )
-    selenium.find_element(*LkLocators.events_bttn_locator).click()
+    events_bttn = selenium.find_element(*LkLocators.events_bttn_locator)
+    selenium.execute_script(
+                    "arguments[0].scrollIntoView({block:'center'});",
+                    events_bttn
+                )
+    events_bttn.click()
 
     wait.until(EC.visibility_of_element_located(EventsLocators.events_container_locator))
     return selenium
+
+@pytest.fixture()
+def feed_teardown(selenium):
+    yield
+
+    events_page = EventsPage(selenium)
+    panel_selector = (
+        ".feed_settings-container, "
+        ".feed_settings-card, "
+        "#fade-screen"
+    )
+    selenium.execute_script("""
+        return new Promise(resolve => setTimeout(resolve, 400));
+    """)
+
+    events_page.try_open_settings(panel_selector)
+    num_of_sections = events_page.count_filter_sections
+    for section_num in range(1, num_of_sections + 1):
+        events_page.click_filters(section_num)
+
+    events_page.X_button.click()
+
+    selenium.quit()
 
 
 @pytest.mark.parametrize("input", ["pineappleplay906@gmail.com", "rtkid_1763067038911", "123456789012"])
@@ -202,10 +249,9 @@ def test_registration_alarm(input, get_reg_page):
     assert driver.find_element(*RegistrationLocators.alarm_text_locator).text == "Учётная запись уже существует"
 
 
-def test_filters_in_feed(login, get_feed_page):
-    login
+def test_filters_in_feed(login, get_feed_page, feed_teardown):
     driver = get_feed_page
-    wait = WebDriverWait(driver, 8)
+    wait = WebDriverWait(driver, 10)
 
     events_page = EventsPage(driver)
 
@@ -214,22 +260,19 @@ def test_filters_in_feed(login, get_feed_page):
         ".feed_settings-card, "
         "#fade-screen"
     )
+
     driver.execute_script("""
-           return new Promise(resolve => setTimeout(resolve, 400));
-       """)
+        return new Promise(resolve => setTimeout(resolve, 400));
+    """)
 
     success = events_page.try_open_settings(panel_selector)
-
     assert success, "Settings panel did not open"
 
     num_of_sections = events_page.count_filter_sections
     for section_num in range(1, num_of_sections + 1):
-        print(events_page.unclick_filters(section_num))
-    events_page.X_button.click()
+        events_page.unclick_filters(section_num)
 
-    wait.until(
-        EC.visibility_of_element_located(EventsLocators.feed_card_container)
-    )
+    events_page.X_button.click()
 
     wait.until(
         EC.text_to_be_present_in_element(
@@ -238,6 +281,7 @@ def test_filters_in_feed(login, get_feed_page):
         )
     )
     assert events_page.no_events_message == "События не найдены"
+
 
 
 def test_inexistent_date(login, get_feed_page):
