@@ -16,13 +16,13 @@ class LoginLocators:
 
 
 class RegistrationLocators:
-    name_field_locator = (By.XPATH, "//*[@id='page-right']/div/div[1]/div/form/div[1]/div[1]/div/input")
-    last_name_field_locator = (By.XPATH, "//*[@id='page-right']/div/div[1]/div/form/div[1]/div[2]/div/input")
-    region_downdrop_locator = (By.XPATH, "//*[@id='page-right']/div/div[1]/div/form/div[2]/div/div/input")
+    name_field_locator = (By.XPATH, "//input[@name = 'firstName']")
+    last_name_field_locator = (By.XPATH, "//input[@name = 'lastName']")
+    region_downdrop_locator = (By.XPATH, "//input[contains(@class, 'rt-select__input')]")
     email_or_phone_field_locator = (By.XPATH, "//*[@id='address']")
     password_field_locator = (By.XPATH, "//*[@id='password']")
     password_repeat_field_locator = (By.XPATH, "//*[@id='password-confirm']")
-    register_bttn_locator = (By.XPATH, "//*[@id='page-right']/div/div[1]/div/form/button[1]")
+    register_bttn_locator = (By.XPATH, "//button[@name = 'register']")
 
     alaram_locator = (By.XPATH, "//*[@id='page-right']/div/div[1]/div/form/div[1]/div/div")
     alarm_text_locator = (By.XPATH, "//*[@id='page-right']/div/div[1]/div/form/div[1]/div/div/h2")
@@ -37,16 +37,16 @@ class LkLocators:
 
 
 class EventsLocators:
-    events_container_locator = (By.XPATH, "//*[@id='root']/div[7]/div[2]")
+    events_container_locator = (By.XPATH, "//div[contains(@class, 'feed_body')]")
+
 
     filter_settings_locator = (By.CSS_SELECTOR, ".feed_open-settings-button")
-    filter_settings_container_locator = (By.XPATH, "//*[@id='fade-screen']/div")
-    filter_sections = (By.XPATH, "//*[@id='fade-screen']/div/div[2]/div/div")
+    filter_sections = (By.XPATH, "//*[contains(@class, 'feed_settings-section')]")
 
     X_button_locator = (By.CSS_SELECTOR, "#fade-screen > div > div.sidebar-impl_header > svg")
 
-    feed_card_container = (By.XPATH, "//*[@id='root']/div[7]/div[2]/div/div/div[2]")
-    message_locator = (By.XPATH, "//*[@id='root']/div[7]/div[2]/div/div/div[2]/header")
+    feed_card_container = (By.XPATH, "//div[@class = 'feed_card_container']")
+    message_locator = (By.XPATH, "//header[text() = 'События не найдены']")
 
-    date_widget_locator = (By.XPATH, "//*[@id='root']/div[7]/div[2]/div/div/div[1]/div[2]/div[2]/div[2]")
+    date_widget_locator = (By.XPATH, "//div[contains(@class, 'date-picker_input')]")
     date_field_locator = (By.XPATH, "//div[contains(@class, 'date-picker_input')]/input")
